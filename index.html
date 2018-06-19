@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>ReaderX</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+        READER - X
+        <img src="" class="page-logo">
+      </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Board of Directors</a></li>
+            <li><a href="#">Needs</a></li>
+            <li class="hidden-sm"><a href="#">Grades</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav">
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Begin page content -->
+  <main class="container-fluid main">
+    <section>
+      <div class="row">
+        <div class="col-xs-3 col-left">
+          <div class="cat">
+            <ul>
+              <li>Android and Me</li>
+              <li>BRG</li>
+              <li>Engadget</li>
+              <li>Geek.com</li>
+              <li>Phandroid</li>
+              <li>Redmond Pie</li>
+              <li>TechHive</li>
+              <li>The Verge</li>
+              <li>TmoNews</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-9 col-right">
+          <div class="cat-data">
+            <div id="app"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hidden">
+      <div class="row">
+        <div class="col-xs-12">
+          <div>
+            MAIN
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Begin Footer content -->
+  <footer class="footer hidden">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          FOOTER
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // You can also require other files to run in this process
+    require("./renderer.js");
+  </script>
+  <script src="https://unpkg.com/react@15/dist/react.js"></script>
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+
+  <script type="text/babel" src="./index.js"></script>
+</body>
+
+</html>
